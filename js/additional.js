@@ -7,6 +7,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$("#contact").css("display", "none");
 		$("#mainContent").css("display", "none");
+		$("#answer").css("display","none");
 		$("#about").css("display", "block");
 	});
 
@@ -14,6 +15,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$("#mainContent").css("display", "none");
 		$("#about").css("display", "none");
+		$("#answer").css("display","none");
 		$("#contact").css("display", "block");
 	});
 
@@ -22,6 +24,7 @@ $(document).ready(function(){
 		$("#contact").css("display", "none");
 		$("#mainContent").css("display", "block");
 		$("#about").css("display", "none");
+		$("#answer").css("display","none");
 	});
 
 	$("#advice").click(function(e){
