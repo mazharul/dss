@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 		
 console.log(platform+','+suit+','+budget);
-		if(platform === "" || suit === "" || budget === ""){
+		if(platform === "undefined" || suit === "undefined" || budget === "undefined"){
 			$(".alert").css("display", "block");
 		}else{
 			$(".alert").css("display", "none");
