@@ -50,7 +50,7 @@ console.log(platform+','+suit+','+budget);
 			}else{
 				$("#mainContent").css("display", "none");
 				$("#answer").css("display","block");
-				$(".alert-success").html("Here are my suggestions!");
+				$("#answerAlert").html("Here are my suggestions!");
 
 				$("#pl").html(getResult[0]);
 				$("#fr").html(getResult[1]);
