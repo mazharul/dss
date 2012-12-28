@@ -35,7 +35,7 @@ $(document).ready(function(){
 			budget = $("input[name=budget]:radio:checked").val();
 
 		
-console.log(platform+','+sut+','+budget);
+console.log(platform+','+suit+','+budget);
 		if(platform === "" || suit === "" || budget === ""){
 			$(".alert").css("display", "block");
 		}else{
