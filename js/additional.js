@@ -35,14 +35,14 @@ $(document).ready(function(){
 			budget = $("input[name=budget]:radio:checked").val();
 
 		
-
+console.log(platform+','+sut+','+budget);
 		if(platform === "" || suit === "" || budget === ""){
 			$(".alert").css("display", "block");
 		}else{
 			$(".alert").css("display", "none");
 			var getResult = processResult(platform, suit, budget);
 
-			if(getResult === "error"){
+			if(getResult[0] === "error"){
 
 				$(".alert-error").css("display", "block");
 				$(".alert-error").html("Ahh, My brain froze calculating, try me again perhaps? ");
