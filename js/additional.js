@@ -31,7 +31,7 @@ $(document).ready(function(){
 			suit = $("input:radio[name=suit]").val(),
 			budget = $("input:radio[name=budget]").val();
 
-		console.log(platform+','+suit+','+budget);
+		
 
 		if(platform === "" || suit === "" || budget === ""){
 			$(".alert").css("display", "block");
@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 function processResult(platform, suit, budget){
 
-	var res = new array();
+	var res = null;
 
 		switch(platform){
 			case "windows":
