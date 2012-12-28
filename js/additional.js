@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 function processResult(platform, suit, budget){
 
-	var res = null;
+	var res = new Array(5);
 
 		switch(platform){
 			case "windows":
