@@ -24,4 +24,14 @@ $(document).ready(function(){
 		$("#about").css("display", "none");
 	});
 
+	$("#advice").click(function(e){
+		e.preventDefault();
+
+		var platform = $("input:radio[name=platform]").val(),
+			suit = $("input:radio[name=suit]").val(),
+			budget = $("input:radio[name=budget]").val();
+
+		console.log(platform+','+suit+','+budget);
+	});
+
 });

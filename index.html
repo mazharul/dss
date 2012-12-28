@@ -55,19 +55,70 @@
         <h3>Please answer few question about your project below and <a href="#about">I</a> will suggest you about tools and technologies you should be using for your project. </h3>
         <p>
           <form class="form-horizontal">
+            
             <div class="control-group">
               <h4>Which platform you are targeting for your project?</h4>
-              <label class="checkbox">
-                <input type="checkbox" id="windows">Windows
+              <label class="radio">
+                <input type="radio" value="windows" name="platform">Windows
               </label>
                 <label class="checkbox">
-                  <input type="checkbox" id="iphone">iOS
+                  <input type="radio" value="iphone" name="platform">iOS
                 </label>
                 <label class="checkbox">
-                  <input type="checkbox" id="android"> Android
+                  <input type="radio" value="android" name="platform"> Android
                 </label>
-              </label>
+
+                <label class="checkbox">
+                  <input type="radio" value="desktop" name="platform"> Desktop
+                </label>
+
+                <label class="checkbox">
+                  <input type="radio" value="uni" name="platform"> Universal
+                </label>
+
+              
             </div>
+
+
+            <div class="control-group">
+              <h4>Which one of these suits your project most currently?</h4>
+                
+                <label class="radio">
+                  <input type="radio" value="small" name="suit"> Small project
+                </label>
+                  <label class="checkbox">
+                    <input type="radio" value="medium" name="suit"> Medium size project
+                  </label>
+                  <label class="checkbox">
+                    <input type="radio" value="fairly" name="suit"> Fairly big project
+                  </label>
+
+                  <label class="checkbox">
+                    <input type="radio" value="startup" name="suit"> This project is my startup product
+                  </label>
+            </div>
+
+
+            <div class="control-group">
+              <h4>Which one of these suits you most?</h4>
+                
+                <label class="radio">
+                  <input type="radio" value="small" name="budget"> I have budget constrain
+                </label>
+                  <label class="checkbox">
+                    <input type="radio" value="medium" name="budget"> Human resource constrain
+                  </label>
+                  <label class="checkbox">
+                    <input type="radio" value="fairly" name="budget"> I don't know where to start but Money is not a problem
+                  </label>
+
+                  <label class="checkbox">
+                    <input type="radio" value="startup" name="budget"> I'm a geek and know everything
+                  </label>
+            </div>
+
+            <input type="button" class="btn" id="advice" value="Advise me!">
+
 
 
           </form>
