@@ -30,9 +30,9 @@ $(document).ready(function(){
 	$("#advice").click(function(e){
 		e.preventDefault();
 
-		var platform = $("input:radio[name=platform]").val(),
-			suit = $("input:radio[name=suit]").val(),
-			budget = $("input:radio[name=budget]").val();
+		var platform = $("input[name=platform]:radio:checked").val(),
+			suit = $("input[name=suit]:radio:checked").val(),
+			budget = $("input[name=budget]:radio:checked").val();
 
 		
 
